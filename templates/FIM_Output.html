@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIM Output</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .post-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .post-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .post-heading {
+            color: #ff4040;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .post-value {
+            color: #333;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .post-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: -100px; /* Adjusted the margin-top value to move the buttons up */
+        }
+
+        .post-buttons button {
+            background-color: #ff4040;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+        }
+
+        .post-buttons button:hover {
+            background-color: #e63c3c;
+        }
+        .output-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border: 3px solid #333;
+      }
+    </style>
+</head>
+<body>
+    <h1>FIM Output</h1>
+
+    <div id="copyMovePost" class="post-container">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Original_Image) }}" alt="Original Image" class="post-image">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Copy_Move_Image) }}" alt="Copy Move Image" class="post-image">
+        <h2 class="post-heading">Cloned Area Detection</h2>
+        <p class="post-value">Value 1: </p>
+        <p class="post-value">Value 2: </p>
+
+    </div>
+
+    <div id="imageSplicingPost" class="post-container" style="display: none;">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Original_Image) }}" alt="Original Image" class="post-image">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Splicing_Image) }}" alt="Image Splicing Image" class="post-image">
+        <h2 class="post-heading">Joined Image Detection</h2>
+        <p class="post-value">Value 1: </p>
+        <p class="post-value">Value 2: </p>
+
+    </div>
+
+    <div id="imageInpaintingPost" class="post-container" style="display: none;">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Original_Image) }}" alt="Original Image" class="post-image">
+        <img src="{{ url_for('return_files_tut_real',filename=filename.Inpainting_Image) }}" class="output-image" alt="Image Inpainting Image" class="post-image">
+        <h2 class="post-heading">Missing Content Detection</h2>
+        <p class="post-value">Value 1: </p>
+        <p class="post-value">Value 2: </p>
+
+    </div>
+
+    <div class="post-buttons">
+        <button onclick="showCopyMovePost()">Detect Cloned Area</button>
+        <button onclick="showImageSplicingPost()">Detect Joined Image</button>
+        <button onclick="showImageInpaintingPost()">Detect Missing Content</button>
+    </div>
+
+    <script>
+        function showCopyMovePost() {
+            document.getElementById("copyMovePost").style.display = "block";
+            document.getElementById("imageSplicingPost").style.display = "none";
+            document.getElementById("imageInpaintingPost").style.display = "none";
+        }
+
+        function showImageSplicingPost() {
+            document.getElementById("copyMovePost").style.display = "none";
+            document.getElementById("imageSplicingPost").style.display = "block";
+            document.getElementById("imageInpaintingPost").style.display = "none";
+        }
+
+        function showImageInpaintingPost() {
+            document.getElementById("copyMovePost").style.display = "none";
+            document.getElementById("imageSplicingPost").style.display = "none";
+            document.getElementById("imageInpaintingPost").style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Search with Twitter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="static/Login_v12/images/icons/hash.ico"/>
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css">
+	
+<body>
+{% for table in tables %}
+	{{titles[loop.index]}}
+	{{ table|safe }}
+{% endfor %}
+</body>
+</html>
