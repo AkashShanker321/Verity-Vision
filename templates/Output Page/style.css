@@ -1,0 +1,45 @@
+img {
+    width: 100%;
+    height: 100%
+}
+body{
+    background-image: url(back.jpg);
+}
+.col-md-4
+{
+    border:2px solid white;
+}
+.display-5
+{
+    color:white;
+}
+h4{
+    color:black;
+}
+h3
+{
+    color:rgb(5, 1, 1);
+}
+.bg-black {
+    background: #000
+}
+
+.skill-block {
+    width: 30%
+}
+
+@media (min-width: 991px) and (max-width:1200px) {
+    .skill-block {
+        padding: 32px !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .skill-block {
+        padding: 56px !important
+    }
+}
+
+body {
+    background-color: #eeeeee
+}
