@@ -1,195 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .abc{
-        margin-right: 0px;
-        width: 400px;
-    }
-    .boxes{
-        margin-bottom: 10px;
-    }
-    input[type="text"]{
-        border:0;
-        background: none;
-        display: block;
-        padding-left: 10px;
-        border: 2px solid rgb(88, 9, 9);
-        outline: none;
-        border-radius: 24px;
-        transition: 0.25s;
-        
-    }
-    input[type="text"]:focus{
-        width: 300px;
-    }
-    input[type = "submit"]{
-        margin-top: 18px;
-        border:0;
-        width: 100px;
-        background: none;
-        display: block;
-        /* margin: 20px auto; */
-        text-align: center;
-        border: 2px solid #2ecc71;
-        /* padding: 14px 40px; */
-        outline: none;
-        border-radius: 24px;
-        transition: 0.25s;
-        cursor: pointer;
-    }
-    input[type = "submit"]:hover{
-        background: #2ecc71;
-    }
-</style>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@400;500;700&display=swap"
-        rel="stylesheet">
+  <title>BizPage Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- custom styles -->
-    <link href="static/website/styles/styles.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDS | Fake Detection System</title>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.8.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">FDS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
 
-    <!-- Jambotron -->
-    <div class="jumbotron jumbotron-fluid" align="center">
-        <div class="container" class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-            
-            <h1 class="logo cursive">Fake Detection System</h1>
-            <h4 class="motto">Identifying the fake Image, Face and Video</h4>
-            <!--<div class="subscribe"> -->
-                <h4 class="info-text">
-                     AI Tool to stop Women Crimes and Child Abuse
-                </h4>
-            <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="index.html">FDS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#services">Fake Detector</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+               </ul>
+          </nav><!-- .navbar -->
         </div>
+      </div>
+
     </div>
+  </header><!-- End Header -->
 
-    <!-- Feature Cards -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text_centre text-secondary" align='center'></h2>
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url(o1.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Face Detection</h2>
+                <p class="animate__animated animate__fadeInUp">Stop crime against women by identifying fake faces</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
             </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(o2.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Fake Video Detection</h2>
+                <p class="animate__animated animate__fadeInUp">No more fake video on social media feed by smart tool</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(o3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Fake Image Detection</h2>
+                <p class="animate__animated animate__fadeInUp">Cheak a fake image before forwarding or sharing</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <!-- Card 1 -->
-                <div class="jumbotron jumbotron-fluid" class="card" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1618590067824-5ba32ca76ce9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                        class="card-img-top" alt="Fake face image detection">
-                    <div class="card-body">
-                        <h6>Fake Image Detection</h6>
-                        <p class="card-text">This system detects full Images manipulated using Copy-move, Splicing and Inpainting techniques.</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col-md-4">
-                <!-- Card 2 -->
-                <div  class="jumbotron jumbotron-fluid" class="card" style="width: 18rem;">
-                    <img src="https://media.istockphoto.com/photos/hacker-attacking-internet-picture-id540848970?b=1&k=20&m=540848970&s=170667a&w=0&h=5cPliD0gaPtKbVGudHZnjTDNw_ahWR_DgtzHgsF72IQ="
-                        class="card-img-top" alt="Fake image detection">
-                    <div class="card-body">
-                        <h6>Fake Face Detection</h6>
-                        <p class="card-text">This system detects computer-gan generated faces from Image into real or fake face.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <!-- Card 3 -->
-                <div class="jumbotron jumbotron-fluid" class="card" style="width: 18rem;">
-                    <img src="https://media.istockphoto.com/photos/video-cameras-system-in-filmed-production-picture-id1308307334?b=1&k=20&m=1308307334&s=170667a&w=0&h=wl_foqjsUuM9y1AbKEKvuDtjnuJrQh4T4Bmn5drNkCc="
-                        class="card-img-top" alt="Fake video detection">
-                    <div class="card-body" class="jumbotron jumbotron-fluid">
-                        <h6>Deepfake Video Detection</h6>
-                        <p class="card-text">This system detects the deepfake videos after scanning the deepfake video frame by frame.</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
     </div>
+  </section><!-- End Hero Section -->
 
-    <!-- File Input Area -->
-    <div class="jumbotron jumbotron-fluid" class ="card-text" class="container" align='center'>
-        <div class="row mt-4">
-            <!--
-            <div class="col-md-offset-12">
-                <h6 class="text-secondary text_centre">Load Fake Image or Video</h6>
-            </div> -->
+  <main id="main">
+
+    <!-- ======= Featured Services Section Section ======= -->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+        
+
         </div>
-        <!-- Drag-Drop/Input File area -->
-        <!-- <div class="row">
-            <div class="col-md-6 file-input">
-                <div class="drag-area">
-                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <header>Drag & Drop to Upload File</header>
-                    <span>OR</span>
-                    <button>Browse File</button>
-                    <form action = "/uploader" method="POST" enctype = "multipart/form-data">
-                        <input type="file" accept="image/*, video/*" hidden> -->
-                        <!-- <button type="submit">Submit</button> -->
-                    <!-- </form>
-                </div>
-            </div>
-        </div> -->
+      </div>
+    </section><!-- End Featured Services Section -->
+
+   
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!--
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Fake Detector</h3>
+          <p>Upload the image/video to check it or simply copy the link here to test a file.</p>
+        </header>
         <div  class="abc">
-            <div >
-                <form action = "/uploader" method = "POST" enctype = "multipart/form-data">
-                    <div class="boxes"><label><h4>Browse image or video file</h4></label></div>
-                    <div class="boxes"><input type = "file" name = "file1"/></div>
-                    <div class="boxes">
-                        <label><h4>Enter a image URL</h4></label>
-                        <input name="image_url" type="text"/>
-                    </div>
-                    <!-- Video URL input -->
-                    <div class="boxes">
-                        <label><h4>Enter a Video URL</h4></label>
-                        <input name="video_url" type="text">
-                    </div>
-                    <input type = "submit"/>
-                 </form>
+          <div >
+              <form action = "/uploader" method = "POST" enctype = "multipart/form-data">
+                  <div class="boxes"><label><h4>Browse image or video file</h4></label></div>
+                  <div class="boxes"><input type = "file" name = "file1"/></div>
+                  <div class="boxes">
+                      <label><h4>Enter a image URL</h4></label>
+                      <input name="image_url" type="text"/>
+                  </div> -->
+
+                  <!-- Video URL input -->
+                  <!--
+                  <div class="boxes">
+                      <label><h4>Enter a Video URL</h4></label>
+                      <input name="video_url" type="text">
+                  </div>
+                  <input type = "submit"/>
+               </form>
+          </div>
+      </div>
+
+    -->
+        <div class="container">
+          
+         
+          <div class="container mb-4" >
+              <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center align-items-center">
+                      <div class="abc d-flex justify-content-center align-items-center" style="border: 2px solid rgb(49, 49, 49);margin: 10px; padding: 30px; border-radius: 7px;">
+                          <div>
+                              <form action="/uploader" method="POST" enctype="multipart/form-data" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                                  <div class="boxes d-flex justify-content-center"><label><b>Browse image or video file</b></label></div>
+                                  <div class="boxes"><input type="file" name="file1" class="d-flex justify-content-center"/></div>
+                                  <div class="boxes d-flex align-items-center" style="flex-direction: column; width: 100%;">
+                                      <label><b>Enter image URL</b></label>
+                                      <input name="image_url" type="text" style="width: 100%;"/>
+                                  </div> 
+                                  <!-- Video URL input -->
+                                  
+                                  <div class="boxes d-flex align-items-center" style="flex-direction: column; width: 100%;">
+                                      <label><b>Enter the Video URL</b></label>
+                                      <input name="video_url" type="text" style="width: 100%;">
+                                  </div>
+                                  <input type="submit"/>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+    
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+     <!-- ======= About Us Section ======= -->
+     <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Stop women and cyber crimes by machine learning tools and creating a better world.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="women.jpg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                To lower the crime against women. By reducing the fake images a major portion of crimes can be reduced.
+              </p>
             </div>
+          </div>
+
+         
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="safe.jpeg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                To make internet a safe for all place and minimum digital garbage.
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="assets/img/about-vision.jpg" height="768px" width="450px" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Experties</a></h2>
+              <p>
+                We are a team filled with computer science engineers and developers for proper working of our tool.
+              </p>
+            </div>
+          </div>
+
         </div>
-    </div>
+
+      </div>
 
 
 
-    <!--Bootstrap JS CDN-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    
+    
 
-    <!--Custom JS-->
-    <!-- <script src="static/website/js/app.js"></script> -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
